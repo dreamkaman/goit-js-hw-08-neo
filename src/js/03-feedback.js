@@ -11,6 +11,10 @@ const onFormElSubmit = (event) => {
 
     event.preventDefault();
 
+    feedbackObject.email = formEl.elements['email'].value ;
+
+    feedbackObject.message = formEl.elements['message'].value ;    
+
     console.log(feedbackObject);
 
     formEl.reset();
